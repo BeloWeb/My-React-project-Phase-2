@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./RecipeCard.css";
 import { AiTwotoneFire, AiOutlineDelete } from "react-icons/ai";
-import { CgAddR } from "react-icons/cg";
-import { v4 as uuid } from "uuid";
+
 const NewRecipeCard = ({
   id,
   title,

@@ -15,10 +15,10 @@ const NewRecipes = () => {
     calories: "",
   });
 
-  //useEffect
   useEffect(() => {
-    fetchNewRecipes();
-  }, []);
+  getRecipes();
+}, [getRecipes]); // ✅ properly added
+
 
   React.useEffect(() => {
     window.localStorage.setItem("NEW_RECIPES", JSON.stringify(newRecipes));
